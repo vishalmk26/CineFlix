@@ -26,8 +26,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     }
   }, []);
 
-  const login = async (email: string, password: string) => {
-    // Simulate API call
+  const login = async (email: string, _password: string) => {
+    // Simulate API call - password would be validated in real implementation
     await new Promise(resolve => setTimeout(resolve, 1000));
     const user = {
       email,
@@ -38,7 +38,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     localStorage.setItem('user', JSON.stringify(user));
   };
 
-  const signup = async (email: string, password: string, name: string) => {
+  const signup = async (email: string, _password: string, name: string) => {
+    // Simulate API call - password would be validated in real implementation
     await new Promise(resolve => setTimeout(resolve, 1000));
     const user = {
       email,
