@@ -35,11 +35,11 @@ export default function Navbar() {
     >
       <div className="flex items-center justify-between px-8 py-4">
         <div className="flex items-center space-x-8">
-          <Link to="/" className="text-3xl font-bold bg-gradient-to-r from-netflix via-purple-500 to-pink-500 bg-clip-text text-transparent">
+          <Link to="/home" className="text-3xl font-bold bg-gradient-to-r from-netflix via-purple-500 to-pink-500 bg-clip-text text-transparent">
             CineFlix
           </Link>
           <div className="hidden md:flex space-x-6">
-            <Link to="/" className="hover:text-gray-300 transition">Home</Link>
+            <Link to="/home" className="hover:text-gray-300 transition">Home</Link>
             <Link to="/browse" className="hover:text-gray-300 transition">Browse</Link>
             <Link to="/my-list" className="hover:text-gray-300 transition">My List</Link>
           </div>
