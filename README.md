@@ -62,3 +62,34 @@ src/
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
+
+## Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub (already done!)
+2. Go to [vercel.com](https://vercel.com)
+3. Click "Import Project"
+4. Select your GitHub repository: `vishalmk26/CineFlix`
+5. Add environment variable:
+   - Name: `VITE_TMDB_API_KEY`
+   - Value: `0fa166b74c619b05dab31b8411043996`
+6. Click "Deploy"
+
+### Deploy to Netlify
+
+1. Go to [netlify.com](https://netlify.com)
+2. Click "Add new site" → "Import an existing project"
+3. Connect to GitHub and select `vishalmk26/CineFlix`
+4. Add environment variable:
+   - Key: `VITE_TMDB_API_KEY`
+   - Value: `0fa166b74c619b05dab31b8411043996`
+5. Click "Deploy site"
+
+### Manual Deployment
+
+```bash
+npm install
+npm run build
+# Upload the 'dist' folder to your hosting provider
+```
